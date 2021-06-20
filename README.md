@@ -1,1 +1,1 @@
-please concat the first author for details.
+Please contact the first author for details.
