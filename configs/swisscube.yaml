@@ -1,0 +1,34 @@
+MODEL:
+  BACKBONE: 'darknet53'
+  ANCHOR_SIZES: [32, 64, 128, 256, 512]
+  ANCHOR_STRIDES: [8, 16, 32, 64, 128]
+DATASETS:
+  TRAIN: './data/SwissCube_1.0/training.txt'
+  VALID: './data/SwissCube_1.0/validation.txt'
+  TEST: './data/SwissCube_1.0/testing.txt'
+  MESH_DIR: './data/SwissCube_1.0/models/'
+  BBOX_FILE: './data/SwissCube_1.0/swisscube_bbox.json'
+  MESH_DIAMETERS: [178.46]
+  N_CLASS: 2
+INPUT:
+  INTERNAL_WIDTH: 512
+  INTERNAL_HEIGHT: 512
+  INTERNAL_K: [303.7865161198519, 0, 256, 0, 303.7865161198519, 256, 0, 0, 1]
+SOLVER:
+  IMS_PER_BATCH: 8
+  # 
+  BASE_LR: 0.01
+  STEPS_PER_EPOCH: 10000
+  MAX_ITER: 300000
+  SCHEDULER_POLICY: 'multi_steps'
+  SCHEDULER_PARAMS: {'steps': [200000, 270000], 'gamma': 0.1}
+  # 
+  LOSS_WEIGHT_CLS: 0.01
+  LOSS_WEIGHT_REG: 0.1
+  POSITIVE_LAMBDA: 1.0
+  AUGMENTATION_SHIFT: 0.1
+  AUGMENTATION_SCALE: 0.1
+  AUGMENTATION_ROTATION: 180
+TEST:
+  IMS_PER_BATCH: 1
+  CONFIDENCE_TH: 0.3
