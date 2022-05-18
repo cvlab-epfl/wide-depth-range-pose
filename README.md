@@ -21,7 +21,7 @@ On the other hand, currently available benchmark datasets do not place a suffici
 
 # How to Use
 
-Download the SwissCube dataset from [**here**](https://drive.google.com/file/d/1aALbqEQbTIDyhij7N4_je_LvhAqzVXm_/view?usp=sharing), and create proper links according to the config file "./configs/swisscube.yaml". Most of the code is self-explaining and a pretrained model is available at [**here**](https://drive.google.com/file/d/1oioDu6WN2ZToJAr7GvmLtDPu_0BLVnDj/view?usp=sharing). Just start from "train.sh" (or "test.sh") and have fun.
+Download the SwissCube dataset from [**here**](https://u.pcloud.link/publink/show?code=XZ7ExHVZNw3kUckPM8SOWzepcE6ANF9jpPYX), and create proper links according to the config file "./configs/swisscube.yaml". Most of the code is self-explaining and a pretrained model is available at [**here**](https://u.pcloud.link/publink/show?code=XZXExHVZdhF4jg8ou80vT0rEnh8EA8UzwH8y). Just start from "train.sh" (or "test.sh") and have fun.
 
 # Citing
 
